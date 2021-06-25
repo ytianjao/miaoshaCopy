@@ -50,7 +50,7 @@ public class MQReceiver {
             return ;
         }
 
-        miaoshaService.miaosha(user, goods);
+        miaoshaService.miaosha(user, goods);//
     }
 
     @RabbitListener(queues = MQConfig.TOPIC_QUEUE1)
